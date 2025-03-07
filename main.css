@@ -1,96 +1,76 @@
 @font-face {
-    font-family: font1;
-    src: url(./assets/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf);
+  font-family: font1;
+  src: url(./assets/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf);
 }
 
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    outline: none;
-    text-decoration: none;
-    font-family: font1;
-    transition: 0.3s;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: font1;
+  transition: 0.3s;
 }
 
 :root {
-    --prim-blue: rgb(9, 41, 126);
-    --white: rgb(180, 209, 255);
+  --prim-blue: rgb(9, 41, 126);
+  --white: rgb(180, 209, 255);
 }
 
 ::selection {
-    display: none;
+  display: none;
 }
-
-
 
 body {
-    background-color: var(--prim-blue);
-    height: auto;
+  background-color: var(--prim-blue);
+  height: auto;
 }
+
+/* THIS IS TO CENTER ALL OF THE CONTENT */
 
 .container {
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3em;
-    padding: 2em;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em;
 }
 
-
+/* COMING SOON TEXT*/
 
 .container h1 {
-    text-align: center;
+  text-align: center;
   color: var(--white);
   line-height: 1em;
-font-size: 6rem;
-font-weight: 500;
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 500;
 }
 
+/* FOR SOCIAL MEDIA LINKS */
 
 .scl-media-links {
-    width: 50%;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
+  width: 50%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
 
+.scl-media-links a {
+  border-radius: 50%;
+  display: block;
+  display: grid;
+  place-content: center;
+  color: var(--white);
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
 
-.scl-media-links a  {
-    border-radius: 50%;
-    display: block;
-    width: 80px;
-    height: 80px;
-    display: grid;
-    place-content: center;
-    border: 2px solid var(--white);
-    color: var(--white);
-    font-size: 2em;
-
-    opacity: 50%;
+  opacity: 50%;
 }
-
 
 .scl-media-links a:hover {
-    opacity: 100%;
-}
-
-
-.usr-handle {
-    position: absolute;
-    right: 5%;
-    bottom: 10%;
-    font-size: 3rem;
-    opacity: 50%;
-    color: var(--white);
-    cursor: pointer;
-}
-
-.usr-handle:hover {
-    opacity: 100%;
+  opacity: 100%;
 }
