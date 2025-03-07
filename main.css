@@ -46,7 +46,7 @@ body {
   text-align: center;
   color: var(--white);
   line-height: 1em;
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(2rem, 8vw, 8rem);
   font-weight: 500;
 }
 
