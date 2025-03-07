@@ -66,7 +66,7 @@ body {
   display: grid;
   place-content: center;
   color: var(--white);
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
 
   opacity: 50%;
 }
