@@ -16,7 +16,9 @@
 
 :root {
   --prim-blue: rgb(9, 41, 126);
-  --white: rgb(180, 209, 255);
+  --white: rgb(238, 245, 255);
+  --bg-color-dark:  rgb(18, 26, 72);
+  --light-grey : rgb(95, 104, 144);
 }
 
 ::selection {
@@ -24,53 +26,144 @@
 }
 
 body {
-  background-color: var(--prim-blue);
+  background-color: var(--bg-color-dark);
+}
+
+main {
+  margin-top: 2em;
   height: auto;
 }
 
-/* THIS IS TO CENTER ALL OF THE CONTENT */
+h1, h2, p {
+  color: var(--white);
+}
 
-.container {
+section {
   height: 100dvh;
+}
+
+.main__header {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.nav_bar_side {
+  position: sticky;
+  top:0px;
+  width: 100%;
+  justify-self: center;
+  background-color: rgba(153, 153, 243, 0.292);
+  backdrop-filter: blur(14px);
+}
+
+.nav_bar_side ul {
+  display: flex;
+   justify-content: center;
+}
+
+
+.nav_bar_side a {
+  padding: 20px 40px;
+  display: block;
+  font-size: 1.3rem;
+  color:  var(--white);
+
+}
+
+.nav_bar_side a:hover {
+  background-color: rgba(0, 0, 139, 0.237);
+}
+
+.about__sect {
+  height: 60dvh;
+  padding: 0 5em;
+}
+
+.about__sect h1 {
+  font-size: 5rem;
+}
+
+
+.about__sect p {
+  line-height: 1.5em;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+
+.skills__sect {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 5em 10em;
+}
+
+
+.skills__sect {
+  height: auto;
+  text-align: center;
+}
+
+
+.skills__sect h2 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.skills__sect p {
+  font-size: 1.5rem;
+  color: var(--light-grey);
+}
+
+
+.skills_list_wrapper {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+
+.skills_list_wrapper svg {
+   width: 250px;
+   height: 250px;
+   cursor: pointer;
+}
+
+
+.skills_list_wrapper svg:hover {
+   transform: scale(1.05);
+}
+
+
+.footer__wrapper {
+  height: 200px;
+  background-color: var(--light-grey);
+  padding: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 3em;
-  padding: 2em;
+  gap: 1em;
+  position: relative;
+  bottom: 0;
 }
 
-/* COMING SOON TEXT*/
-
-.container h1 {
-  text-align: center;
-  color: var(--white);
-  line-height: 1em;
-  font-size: clamp(2rem, 8vw, 8rem);
-  font-weight: 500;
+.footer__wrapper h5 {
+  font-size: 2rem;
+  margin-right: 1em;
+  color: var(--bg-color-dark);
 }
 
-/* FOR SOCIAL MEDIA LINKS */
-
-.scl-media-links {
-  width: 50%;
-  flex-direction: row;
+.social-med-links  {
   display: flex;
-  justify-content: center;
   gap: 2em;
 }
 
-.scl-media-links a {
-  border-radius: 50%;
-  display: block;
-  display: grid;
-  place-content: center;
-  color: var(--white);
-  font-size: clamp(2rem, 4vw, 4.5rem);
-
+.social-med-links  a{
+  font-weight: 700;
+  color: var(--bg-color-dark);
   opacity: 50%;
-}
-
-.scl-media-links a:hover {
-  opacity: 100%;
+  font-size: 3rem;
 }
