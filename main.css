@@ -27,10 +27,10 @@
 
 body {
   background-color: var(--bg-color-dark);
+  margin: 0;
 }
 
 main {
-  margin-top: 2em;
   height: auto;
 }
 
@@ -52,6 +52,7 @@ section {
 .nav_bar_side {
   position: sticky;
   top:0px;
+  right: 0;
   width: 100%;
   justify-self: center;
   background-color: rgba(153, 153, 243, 0.292);
@@ -60,16 +61,15 @@ section {
 
 .nav_bar_side ul {
   display: flex;
-   justify-content: center;
+   justify-content: left;
 }
 
 
 .nav_bar_side a {
-  padding: 20px 40px;
   display: block;
-  font-size: 1.3rem;
+  font-size:  1.5rem;
   color:  var(--white);
-
+   padding: 10px 16px;
 }
 
 .nav_bar_side a:hover {
@@ -77,18 +77,22 @@ section {
 }
 
 .about__sect {
+   display: flex;
+   justify-content: center;
+   align-items: left;
+   flex-direction: column;
   height: 60dvh;
-  padding: 0 5em;
+  gap: 1em;
+  padding: 2em;
 }
 
 .about__sect h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 
 .about__sect p {
   line-height: 1.5em;
-  text-align: justify;
   font-size: 1.2rem;
 }
 
@@ -97,7 +101,9 @@ section {
    display: flex;
    justify-content: center;
    flex-direction: column;
-   padding: 5em 10em;
+   padding: 3em;
+   background-color: rgb(29, 35, 47);
+
 }
 
 
@@ -127,8 +133,8 @@ section {
 }
 
 .skills_list_wrapper svg {
-   width: 250px;
-   height: 250px;
+   width: 150px;
+   height: auto;
    cursor: pointer;
 }
 
@@ -145,20 +151,23 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 1em;
   position: relative;
   bottom: 0;
+  right: 0;
 }
 
 .footer__wrapper h5 {
   font-size: 2rem;
-  margin-right: 1em;
   color: var(--bg-color-dark);
 }
 
 .social-med-links  {
   display: flex;
-  gap: 2em;
+  gap:1em;
+  justify-content: center;
+  width: 100%;
 }
 
 .social-med-links  a{
