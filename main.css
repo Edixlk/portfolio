@@ -12,7 +12,11 @@
   text-decoration: none;
   font-family: font1;
   transition: 0.3s;
+  outline: none;
+  border: none;
 }
+
+html {scroll-behavior: smooth;}
 
 :root {
   --prim-blue: rgb(9, 41, 126);
@@ -44,8 +48,8 @@ section {
 
 .main__header {
   width: 100%;
-  text-align: center;
-  padding: 10px;
+  text-align: left;
+  padding: 10px 1em;
 }
 
 
@@ -101,7 +105,7 @@ section {
    display: flex;
    justify-content: center;
    flex-direction: column;
-   padding: 3em;
+   padding:  5em 1em ;
    background-color: rgb(29, 35, 47);
 
 }
@@ -133,7 +137,7 @@ section {
 }
 
 .skills_list_wrapper svg {
-   width: 150px;
+   width: 100px;
    height: auto;
    cursor: pointer;
 }
@@ -144,30 +148,102 @@ section {
 }
 
 
+.projects-sect {
+  padding: 5em 1em ;
+  height: auto;
+}
+
+.projects-sect h2 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 40px;
+}
+
+
+.projects-list {
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.item  {
+  flex-grow: 1;
+  background-color: rgb(26, 52, 155);
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  padding: 0.8em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+
+.card-img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border: 1px solid;
+}
+
+.item h3{
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.item button {
+   cursor: pointer;
+  padding: 10px 15px;
+  font-weight: 800;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.item button:hover {
+  border: 1px solid blue;
+  background-color: blue;
+}
+
+.item-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+
 .footer__wrapper {
   height: 200px;
   background-color: var(--light-grey);
-  padding: 2em;
+  padding:  5em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1em;
-  position: relative;
-  bottom: 0;
-  right: 0;
+  
 }
 
 .footer__wrapper h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--bg-color-dark);
 }
 
 .social-med-links  {
   display: flex;
-  gap:1em;
+  gap: 2em;
   justify-content: center;
   width: 100%;
+  padding-top: 1em;
+  border-top: 1px solid rgba(63, 63, 82, 0.285);
 }
 
 .social-med-links  a{
@@ -176,3 +252,8 @@ section {
   opacity: 50%;
   font-size: 3rem;
 }
+
+.social-med-links a:hover {
+  opacity: 100%;
+}
+
