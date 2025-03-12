@@ -49,7 +49,29 @@ section {
 .main__header {
   width: 100%;
   text-align: left;
-  padding: 10px 1em;
+  padding: 10px 0.3em;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+
+.main__header h1 {
+  text-align: center;
+}
+
+
+.header_opts { display: flex; gap: 1em;  align-content: center;}
+
+.header_opts button {
+  padding: 1em;
+  font-weight: 300;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  background-color: rgb(0, 79, 139);
 }
 
 
@@ -58,9 +80,10 @@ section {
   top:0px;
   right: 0;
   width: 100%;
-  justify-self: center;
-  background-color: rgba(153, 153, 243, 0.292);
+  justify-self: left;
+  background-color: rgba(33, 94, 236, 0.292);
   backdrop-filter: blur(14px);
+  z-index: 1;
 }
 
 .nav_bar_side ul {
@@ -230,7 +253,7 @@ section {
 
 .footer__wrapper {
   height: 200px;
-  background-color: var(--light-grey);
+  background-color: rgb(14, 27, 48);
   padding:  5em;
   display: flex;
   justify-content: center;
@@ -242,7 +265,7 @@ section {
 
 .footer__wrapper h5 {
   font-size: 1.5rem;
-  color: var(--bg-color-dark);
+  color: rgba(26, 128, 192, 0.584);
 }
 
 .social-med-links  {
@@ -251,13 +274,13 @@ section {
   justify-content: center;
   width: 100%;
   padding-top: 1em;
-  border-top: 1px solid rgba(63, 63, 82, 0.285);
+  border-top: 1px solid rgba(26, 128, 192, 0.584);
 }
 
 .social-med-links  a{
   font-weight: 700;
-  color: var(--bg-color-dark);
-  opacity: 50%;
+  color:  rgba(26, 128, 192, 0.868);
+  opacity: 40%;
   font-size: 3rem;
 }
 
