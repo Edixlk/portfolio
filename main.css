@@ -3,6 +3,11 @@
   src: url(./assets/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: druk;
+  src: url(./assets/fonts/Druk\ Wide\ Bold\ Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,16 +20,27 @@
 }
 
 :root {
-  --prim-blue: rgb(9, 41, 126);
-  --white: rgb(180, 209, 255);
+  --prim-blue: rgb(1, 7, 22);
+  --prim-blue-bg: rgba(4, 9, 22, 0.824);
+  --white: rgb(172, 208, 231);
+  --light-blue:#a1cbf6;
 }
 
 ::selection {
   display: none;
 }
 
+:is(h1, .usr-name-handle) {
+  font-family: druk;
+}
+
 body {
-  background-color: var(--prim-blue);
+  background-image: url(./assets/bg-image/thumb-1920-1318499.jpeg);
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: cover;
+  background-blend-mode:  color-dodge;
+  background-color: var(--prim-blue-bg);
   height: auto;
 }
 
@@ -37,7 +53,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 3em;
-  padding: 2em;
+  padding: .5em;
 }
 
 /* COMING SOON TEXT*/
@@ -46,7 +62,7 @@ body {
   text-align: center;
   color: var(--white);
   line-height: 1em;
-  font-size: clamp(2rem, 8vw, 8rem);
+  font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 500;
 }
 
@@ -65,12 +81,22 @@ body {
   display: block;
   display: grid;
   place-content: center;
-  color: var(--white);
-  font-size: clamp(2rem, 4vw, 4.5rem);
-
-  opacity: 50%;
+  color: var(--light-blue);
+  font-size: clamp(2.3rem, 6vw, 3.3rem);
+  opacity: 75%;
 }
 
 .scl-media-links a:hover {
   opacity: 100%;
+}
+
+/* for user name handle */
+.usr-name-handle {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  opacity: 50%;
 }
