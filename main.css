@@ -41,7 +41,7 @@ body {
   background-size: cover;
   background-blend-mode:  color-dodge;
   background-color: var(--prim-blue-bg);
-  height: auto;
+  height: 100dvh;
 }
 
 /* THIS IS TO CENTER ALL OF THE CONTENT */
