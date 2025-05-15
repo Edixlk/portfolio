@@ -17,3 +17,7 @@ https://portfolio-ochre-ten-71.vercel.app/
 - minor tweaks to colors.
 
 - user handle now addded (top right bottom).
+
+## update 5.15.25
+
+- Added favicon for browser tab
