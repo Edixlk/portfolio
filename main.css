@@ -13,7 +13,6 @@
   font-family: font1;
   transition: 0.3s;
   outline: none;
-  border: none;
 }
 
 html {scroll-behavior: smooth;}
@@ -287,13 +286,3 @@ section {
 .social-med-links a:hover {
   opacity: 100%;
 }
-
-
-@media only screen and (max-width:1000px) {
-
-  .item {
-    flex-grow: 1;
-  }
-  
-}
-

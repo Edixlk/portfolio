@@ -1,4 +1,10 @@
 /*** NOTE: THIS IS A DESKTOP-ONLY LAYOUT. THE SITE LAYOUT WILL BREAK ON SMALLER SCREENS. WILL BE ADDED IN SOON..***/
+/* google icon style*/
+.material-symbols-outlined {
+  color: white;
+  display: none;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
 
 @font-face {
   font-family: font1;
@@ -21,6 +27,7 @@
   text-decoration: none;
   font-family: font1;
   transition: 0.3s;
+
 }
 
 ::-webkit-scrollbar {
@@ -38,12 +45,16 @@ body {
   --light-blue: #a1cbf6;
 }
 
+::selection {
+  color: #fff;
+  background-color: rgb(3, 82, 173);
+}
+
 :is(h1, .usr-name-handle) {
   font-family: druk;
 }
 
 /*=========================================*/
-
 
 /* HEADER BG IMAGE (HERO SECTION)*/
 header {
@@ -57,7 +68,6 @@ header {
   height: 100dvh;
 }
 
-
 /* NAVBAR*/
 
 nav {
@@ -69,12 +79,11 @@ nav {
   justify-content: center;
 }
 
-
 .nav-links a {
   color: var(--light-blue);
   font-size: 1.5rem;
-  padding: 0.2em 0.6em;
   border-radius: 20px;
+  padding: 0.2em 0.8em;
   margin: 0 0.2em;
 }
 
@@ -88,7 +97,6 @@ nav {
   color: #fff;
 }
 
-
 /* HERO SECTION (FIRST PAGE)*/
 
 .hero-section {
@@ -98,26 +106,26 @@ nav {
   align-items: center;
   height: 80dvh;
   color: var(--white);
+  text-align: center;
 }
 
 .hero-section h1 {
-  font-size: 6rem;
+  font-size: clamp(2.4em, 8vw, 5rem);
   text-align: center;
 }
 
 .hero-section p {
   font-weight: 500;
-  font-size: 2rem;
-  margin-bottom: 1.4rem;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  margin-bottom: 1.2rem;
 }
 
 .contin-btn {
-  width: 250px;
-  padding: 0.5em 0;
-  font-size: 1.5rem;
+  padding: 0.5em 3em;
   border-radius: 25px;
+  font-size: 1.3rem;
   background-color: transparent;
-  border: 2px solid var(--light-blue);
+  border: 1px solid var(--light-blue);
   color: var(--white);
   cursor: pointer;
 }
@@ -136,33 +144,33 @@ nav {
 }
 
 .about-sect h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 8vw, 3rem);
   margin-bottom: 0.5em;
 }
 
 .about-sect p {
   line-height: 1.5em;
-  font-size: 1.3rem;
+  font-size: clamp(0.2rem, 8vw, 1.2rem);
 }
 
 .skills-section {
-  margin-top: 2rem;
-  display: grid;
+  margin-top: 1rem;
   gap: 0.4em;
   place-content: left;
   align-items: center;
   background-color: var(--white);
-  height: 30dvh;
+  height: auto;
   display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  flex-wrap: wrap;
+  width: 50%;
 }
 
 .item {
+  flex-grow: 1;
   background-color: var(--prim-blue);
   color: var(--white);
-  width: 300px;
-  height: 200px;
+  width: 150px;
+  height: 50px;
   text-align: center;
   align-content: center;
   font-weight: 200;
@@ -219,10 +227,9 @@ nav {
   flex-wrap: wrap;
   display: flex;
   justify-content: left;
-  border: 1px solid red;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid #83bffc82;
 }
 
 .email-form h3 {
@@ -240,15 +247,14 @@ nav {
   padding: 0.5em;
   font-size: 1rem;
   border-radius: 5px;
-  width: 300px;
+  max-width: 450px;
 }
-
 
 /* FOOTER (WITH LINKS ONLY)*/
 
 .footer {
   display: flex;
-  padding: 1em 5.5em;
+  padding: 1em clamp(.5rem, 8vw, 7%);
   height: auto;
   background-color: var(--prim-blue-bg);
 }
@@ -257,17 +263,15 @@ nav {
   color: var(--white);
   font-size: 1rem;
   opacity: 60%;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .scl-med {
-  border: 1px solid red;
-  padding:  1em;
+  padding: 0;
   width: fit-content;
   display: flex;
   flex-direction: column-reverse;
   align-self: center;
-
 }
 
 .scl-med a {
@@ -279,15 +283,95 @@ nav {
   opacity: 75%;
 }
 
-.scl-med a:hover {color: #fff; opacity: 100%;}
+.scl-med a:hover {
+  color: #fff;
+  opacity: 100%;
+}
 
+.projects-sect {
+  display: none;
+}
 
+/* mobile meed */
 
-/* mobile sm */
-
-@media screen and (max-width: 400px) {
-  .hero-section h1 {
-    font-size: clamp(1.5rem, 8vw, 2rem);
-    text-align: center;
+@media screen and (max-width: 767px) {
+  .material-symbols-outlined {
+    display: block;
   }
+
+  nav {
+    display: ;
+    justify-content: left;
+    padding: 0 clamp(0.5em, 4vw, 19%);
+  }
+
+  #Hamburg-menu {
+    font-size: 2.5rem;
+    line-height: 80px;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  #Hamburg-menu:hover {
+    color: var(--light-blue);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    background-color: rgba(5, 5, 21, 0.973);
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1em;
+    display: none;
+    left: 0;
+
+  }
+
+  .nav-links a,
+  #active {
+    background-color: transparent;
+    padding: 0 1em;
+    margin: 0;
+    border-radius: 0;
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+
+  .nav-links a:nth-child(-n + 3) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.555);
+  }
+
+  .nav-links #active {
+    background-color: rgba(12, 12, 193, 0.475);
+  }
+
+  /* this color is a bit lighter than the active id on link.*/
+
+  .nav-links a:hover {
+    background-color: rgba(56, 56, 240, 0.336);
+  }
+
+  /* about section */
+
+  .about-sect {
+    padding: clamp(1rem, 8vw, 7%);
+  }
+
+  .skills-section {
+    width: 100%;
+  }
+
+  /* Email form */
+  .email-form {
+    padding: 1.3em clamp(1em, 8vw, 4%);
+    gap: 0.5em;
+    
+  }
+
+  .email-form h3 {
+    color: var(--white);
+  }
+
+
 }
