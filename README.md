@@ -1,6 +1,6 @@
 ﻿## Live site link (dev branch):
 
-https://portfoliod-git-development-edixlks-projects.vercel.app/
+https://portfolio-git-development-edixlks-projects.vercel.app/
 
 ### updates
 
