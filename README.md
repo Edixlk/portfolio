@@ -33,7 +33,8 @@ https://portfolio-git-development-edixlks-projects.vercel.app/
 - Minor fixes to Email form.
 - New ```::selection``` bg color and text color added, matching the look and feel.
 - Cards in the about section has a flexbox layout than grid before.
-- Make first three sections responsive on mobile. (see screenshot below) 
+- Make first three sections responsive on mobile.
+- Mobile navbar added (see screenshot below)
 
 ![Mobile nav bar ](/assets/images/Screenshot.png)
 
