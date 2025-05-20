@@ -28,12 +28,15 @@ https://portfolio-git-development-edixlks-projects.vercel.app/
 
 - changed color for footer, header along with the buttons
 
-### 5.1.25 
+### 5.17.25 
 
 - Make first three sections responsive on mobile. 
 - Minor fixes to Email form.
 - New ```::selection``` bg color and text color added, matching the look and feel.
 - Cards in the about section has a flexbox layout than grid before.
 
-  ![Mobile nav bar ](/assets/images/Screenshot.png)
+![Mobile nav bar ](/assets/images/Screenshot.png)
 
+## 5.20.25
+
+- Added now responsive projects section

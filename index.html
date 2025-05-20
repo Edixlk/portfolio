@@ -10,9 +10,19 @@
     />
 
     <!--fontawsome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="home.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,9 +33,9 @@
     <header>
       <!--Navbar-->
       <nav>
-        <span class="material-symbols-outlined" id="Hamburg-menu"> menu </span>
+        <span class="material-symbols-outlined" id="Hamburg-menu" class="menu-btn"> menu </span>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="navlinks">
           <a id="active" href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
@@ -77,19 +87,61 @@
         </div>
       </section>
 
-      <section class="projects-sect" id="projects">
+      <section class="proj-section" id="projects">
         <h1>My Projects</h1>
 
-        <div class="div-list">
-          <article class="card">1</article>
+        <div class="projects-sect" >
+          <article class="card">
+            <div class="card-image">
+              <img src="./Images/3.png" alt="Project#1" />
+            </div>
+            <div class="card-details">
+              <h3>Personal Portfolio</h3>
+              <div class="card-options">
+                <button class="live btn">Live Site</button>
+                <button class="source btn">Source Code</button>
+              </div>
+            </div>
+          </article>
 
-          <article class="card">2</article>
+          <article class="card">
+            <div class="card-image">
+              <img src="./Images/1.png" alt="Project#1" />
+            </div>
+            <div class="card-details">
+              <h3>Blog Preview Card</h3>
+              <div class="card-options">
+                <button class="live btn">Live Site</button>
+                <button class="source btn">Source Code</button>
+              </div>
+            </div>
+          </article>
 
-          <article class="card">3</article>
-
-          <article class="card">4</article>
-
-          <article class="card">5</article>
+          <article class="card">
+            <div class="card-image">
+              <img src="./Images/2.png" alt="Project#1" />
+            </div>
+            <div class="card-details">
+              <h3>QR code component</h3>
+              <div class="card-options">
+                <button class="live btn">Live Site</button>
+                <button class="source btn">Source Code</button>
+              </div>
+            </div>
+          </article>
+          
+          <article class="card">
+            <div class="card-image">
+              <img src="./Images/2.png" alt="Project#1" />
+            </div>
+            <div class="card-details">
+              <h3>Recipe Page</h3>
+              <div class="card-options">
+                <button class="live btn">Live Site</button>
+                <button class="source btn">Source Code</button>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -108,14 +160,12 @@
     <footer class="footer">
       <ul class="scl-med footerlinks">
         <h5>&copy2025</h5>
- 
+
         <a href="https://x.com/nixc67">Twitter (X)</a>
         <a href="https://github.com/Edixlk">Github Page </a>
         <a href="https://www.youtube.com/@edixlk3">Youtube Channel</a>
       </ul>
     </footer>
 
-    <!--External Javascript -->
-    <script src="./home.js" defer></script>
   </body>
 </html>

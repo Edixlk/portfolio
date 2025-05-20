@@ -17,17 +17,22 @@
 }
 
 /* =============== BASIC LAYOUT ==============*/
+
+html {
+   scroll-behavior: smooth;
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: none;
   list-style: none;
   outline: none;
-  border: none;
   text-decoration: none;
   font-family: font1;
   transition: 0.3s;
-
 }
 
 ::-webkit-scrollbar {
@@ -166,7 +171,7 @@ nav {
 }
 
 .item {
-  flex-grow: 1;
+  flex-grow: 0;
   background-color: var(--prim-blue);
   color: var(--white);
   width: 150px;
@@ -179,42 +184,84 @@ nav {
 
 /* PROJECTS SECTION (THIRD PAGE/SECTION)*/
 
-.projects-sect {
-  background-color: white;
-  padding: 0em em;
-}
-
-.projects-sect h1 {
-  width: 100%;
-  border-bottom: 1px solid;
-  background-image: url(./assets/bg-image/thumb-1920-1318499.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: color-dodge;
-  font-size: 2rem;
-  padding: 1em 3em;
+.proj-section {
   color: var(--white);
+  padding: 2em clamp(0.3em, 8vw, 4%);
+  height: auto;
+  border-top: 1px solid rgba(1, 61, 85, 0.205);
+  background-color: rgb(97, 171, 211);
 }
 
-.div-list {
-  background-color: var(--light-blue);
-  padding: 1em 5em;
-  display: grid;
-  gap: 0.3em;
-  place-content: center;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+.proj-section h1 {
+  color: var(--prim-blue-bg);
+  font-size: clamp(1em, 8vw, 2rem);
+  text-align: center;
+}
+
+.projects-sect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  padding-bottom: 3em;
+  margin-top: 2rem;
 }
 
 .card {
-  height: 250px;
-  background-color: var(--prim-blue);
-  color: var(--white);
-  text-align: center;
-  align-content: center;
-  padding: 1em;
-  font-size: 4rem;
+  cursor: pointer;
+  width:400px;
+  height: auto;
+  background-color: rgb(16, 16, 58);
+  color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-grow: 0;
+}
+
+
+
+.card h3 {
+  font-size: clamp(1rem,8vw, 1.5rem);
   font-weight: 200;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-details {
+  text-align: left;
+  padding: 1em 1.2em;
+  height: auto;
+}
+
+.card-options {
+  margin-top: 1em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.card-options .btn {
+  padding: .3em 1em;
+  border-radius: 25px;
+  font-size: clamp(.6rem, 8vw, 1.1rem);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid lightblue;
+  color: lightblue;
+}
+
+.card-options .btn:hover {
+  background-color: lightblue;
+  color: rgb(16, 16, 58);
+}
+
+.card:hover {
+  background-color: rgb(8, 41, 113);
+   box-shadow: 5px 10px 35px rgba(16, 36, 58, 0.4);
 }
 
 /* EMAIL FORM LAYOUT (BEFORE FOOTER )*/
@@ -222,14 +269,15 @@ nav {
 .email-form {
   height: auto;
   color: var(--white);
-  padding: 1.4em 5.5em;
+  padding: 2em clamp(1.3rem, 8vw, 7%);
   margin-bottom: 0.2em;
   flex-wrap: wrap;
   display: flex;
   justify-content: left;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #83bffc82;
+  background-color: rgba(11, 11, 25, 0.203);
+  border-bottom: 1px solid var(--light-blue);
 }
 
 .email-form h3 {
@@ -254,7 +302,7 @@ nav {
 
 .footer {
   display: flex;
-  padding: 1em clamp(.5rem, 8vw, 7%);
+  padding: 1em clamp(0.5rem, 8vw, 7%);
   height: auto;
   background-color: var(--prim-blue-bg);
 }
@@ -288,19 +336,15 @@ nav {
   opacity: 100%;
 }
 
-.projects-sect {
-  display: none;
-}
-
 /* mobile meed */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .material-symbols-outlined {
     display: block;
   }
 
   nav {
-    display: ;
+    display: flex ;
     justify-content: left;
     padding: 0 clamp(0.5em, 4vw, 19%);
   }
@@ -323,9 +367,8 @@ nav {
     flex-direction: column;
     width: 100%;
     padding-bottom: 1em;
-    display: none;
+    display:flex;
     left: 0;
-
   }
 
   .nav-links a,
@@ -364,14 +407,27 @@ nav {
 
   /* Email form */
   .email-form {
-    padding: 1.3em clamp(1em, 8vw, 4%);
+
     gap: 0.5em;
-    
   }
 
   .email-form h3 {
     color: var(--white);
   }
 
+  /* projects*/
+  .projects-sect .card {
+    flex-grow: 1;
+  }
 
 }
+
+/* medium screens */
+
+@media screen and (max-width: 1024px)  {
+  .projects-sect .card {
+    flex-grow: 0;
+  }
+
+}
+
