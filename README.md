@@ -40,3 +40,11 @@ https://portfolio-git-development-edixlks-projects.vercel.app/
 ## 5.20.25
 
 - Added now responsive projects section
+
+## 5.21.25
+
+- Cards now have links with the matching images 
+
+- Minor fixes to the card preview images using ``object-fit:;``
+
+- Skills sections removed (for now)
