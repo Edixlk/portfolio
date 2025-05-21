@@ -245,39 +245,11 @@ object-fit: cover;
    box-shadow: 5px 10px 35px rgba(16, 36, 58, 0.4);
 }
 
-/* EMAIL FORM LAYOUT (BEFORE FOOTER )*/
+/* Email form ****(TEMPORARILY REMOVED)**** 
 
-.email-form {
-  height: auto;
-  color: var(--white);
-  padding: 2em clamp(1.3rem, 8vw, 7%);
-  margin-bottom: 0.2em;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(11, 11, 25, 0.203);
-  border-bottom: 1px solid var(--light-blue);
-}
 
-.email-form h3 {
-  font-size: clamp(1rem, 8vw, 2.3rem);
-  margin-right: 0.5em;
-  color: white;
-}
 
-.footer .contact {
-  float: right;
-  display: flex;
-}
-
-.contact input {
-  padding: 0.5em;
-  font-size: 1rem;
-  border-radius: 5px;
-  max-width: 450px;
-}
+*/
 
 /* FOOTER (WITH LINKS ONLY)*/
 
@@ -382,19 +354,10 @@ object-fit: cover;
     padding: clamp(1rem, 8vw, 7%);
   }
 
-  .skills-section {
-    width: 100%;
-  }
-
-  /* Email form */
-  .email-form {
-
-    gap: 0.5em;
-  }
-
-  .email-form h3 {
-    color: var(--white);
-  }
+  
+  /* CONTACT FORM ****(TEMPORARILY REMOVED)**** 
+ 
+    */
 
   /* projects*/
   .projects-sect .card {
