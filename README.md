@@ -49,3 +49,7 @@ https://portfolio-git-development-edixlks-projects.vercel.app/
 - Minor fixes to the card preview images using ``object-fit:;``
 
 - Skills sections removed (for now)
+
+- Removed old main.css file 
+
+- Removed contact form (was located on top of footer).
