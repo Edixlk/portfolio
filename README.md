@@ -22,7 +22,7 @@ https://portfolio-git-development-edixlks-projects.vercel.app/
 
 ### 3.12.25
 
-- Fdded cv and contact button (for email) to navigaton bar
+- Added cv and contact button (for email) to navigaton bar ***(REMOVED)***
 
 - Minor fixes to navigation bar
 
